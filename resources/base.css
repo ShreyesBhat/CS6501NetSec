@@ -2,20 +2,24 @@
 /* Copyright 2017 Google Inc. */
 
 body, html, td, span, div, input, textarea {
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14pt;
+  color: #3c0bad;
 }
 
 body {
-  background: url('cheese.png') top center repeat;
+  background: url('background.jpg') top center repeat;
   text-align: center;
-  opacity: 0.80;
+  opacity: 1.0;
 }
 
 h2 {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  font-size: 30pt;
+  font-size: 50pt;
   font-weight: bold;
+  color: #ffffdf;
+  -webkit-text-stroke: 2px black;
 }
 
 td {
@@ -41,9 +45,10 @@ a.button:visited {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  background: #ffffcc;
+  background: #cffff5;
   padding: 20px;
-  border: 3px solid #ffb149;
+  border: 1px solid #ffb149;
+  border-radius: 10pt;
 }
 
 .menu {
@@ -53,8 +58,9 @@ a.button:visited {
   margin-right: auto;
   margin-top: 20px;
   width: 90%;
-  background: #ffffcc;
-  border: 3px solid #ffb149;
+  background: #cffff5;
+  border: 1px solid #00000d;
+  border-radius: 10pt;
 }
 
 .menu-user {

@@ -1,17 +1,16 @@
-{{# Copyright 2017 Google Inc. }}
 <div class='menu'>
   <span id='menu-left'>
     <a href='/{{_unique_id}}/'>Home</a>
       [[if:_cookie.uid]]
-      | <a href='/{{_unique_id}}/snippets.gtl'>My&nbsp;Snippets</a>
-      | <a href='/{{_unique_id}}/newsnippet.gtl'>New&nbsp;Snippet</a>
+      | <a href='/{{_unique_id}}/snippets.gtl'>My&nbsp;Blog&nbsp;Posts</a>
+      | <a href='/{{_unique_id}}/newsnippet.gtl'>New&nbsp;Post</a>
       | <a href='/{{_unique_id}}/upload.gtl'>Upload</a>
       [[/if:_cookie.uid]]
   </span>
   <span id='menu-right'>
       [[if:_cookie.uid]]
       <span class='menu-user'>
-        {{_profile.name:text}} &lt;{{_cookie.uid}}&gt;
+        {{_profile.name:text}}
       </span>
       [[if:_cookie.is_admin]]
       | <a href='/{{_unique_id}}/manage.gtl'>Manage this server</a>
