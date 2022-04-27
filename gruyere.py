@@ -148,7 +148,8 @@ def main():
               server_unique_id)
 
   global stored_data
-  stored_data = _LoadDatabase()
+  # stored_data = _LoadDatabase()
+  stored_data = None
 
   while not quit_server:
     try:

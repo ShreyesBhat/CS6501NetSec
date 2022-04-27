@@ -2,7 +2,10 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<title>Blog Site</title>
 [[include:base.css]][[/include:base.css]]
 <script src="/{{_unique_id}}/lib.js" text="text/javascript">
 </script>
@@ -11,27 +14,12 @@
 <body>
 [[include:menubar.gtl]][[/include:menubar.gtl]]
 <div>
-<h2 class='has-refresh'>Gruyere: Home</h2>
+<h2 class='has-refresh'>Welcome to my blog site</h2>
 <div class='refresh'><a class='button' onclick='_refreshHome("{{_unique_id}}")' href='#'>Refresh</a></div>
 </div>
 <div class='content'>
 <table width='100%'>
-[[if:_profile.private_snippet]]
-  <tr>
-    <td></td>
-    <td>
-      Private&nbsp;snippet&nbsp;
-    </td>
-    <td>
-      <a class='button' id='show' onclick='_showHide("show", "hide")' href='#'>Show &#9658;</a>
-      <span id='hide' style='display: none;'>
-      <a class='button' onclick='_showHide("show", "hide")' href='#'>Hide &#9668;</a> &nbsp;
-      <span id='private_snippet'>{{_profile.private_snippet:html}}</span></span>
-    </td>
-  </tr>
-  <tr><td colspan='3'><hr></td></tr>
-[[/if:_profile.private_snippet]]
-  <tr><td colspan='3'><b>Most recent snippets:</b></td></tr>
+<tr><td colspan='3'><b>Recent posts:</b></td></tr>
 [[for:_db]]
 [[if:is_author]][[if:snippets.0]]
   <tr>
