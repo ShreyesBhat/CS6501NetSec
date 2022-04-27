@@ -7,6 +7,16 @@ body, html, td, span, div, input, textarea, button {
   color: #3c0bad;
 }
 
+body table tr td a {
+  padding-left: 5pt;
+  padding-right: 5pt;
+}
+
+body table tr td a:hover {
+  background-color: #90e1e8;
+  border-radius: 4pt;
+}
+
 button {
   border-radius: 10pt;
   border: 1.5px solid #00000d;
