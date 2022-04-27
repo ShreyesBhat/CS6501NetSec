@@ -5,6 +5,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
 <title>Blog Site</title>
 [[include:base.css]][[/include:base.css]]
 <script src="/{{_unique_id}}/lib.js" text="text/javascript">
@@ -19,7 +22,7 @@
 </div>
 <div class='content'>
 <table width='100%'>
-<tr><td colspan='3'><b>Recent posts:</b></td></tr>
+<tr><td colspan='3'><b>All posts:</b></td></tr>
 [[for:_db]]
 [[if:is_author]][[if:snippets.0]]
   <tr>
@@ -31,7 +34,7 @@
     </td>
     <td width='100%'><span id='{{_key}}'>{{snippets.0:html}}</span>
     <br>
-          <a href='/{{_unique_id}}/snippets.gtl?uid={{_key}}'>All snippets</a>&nbsp;
+          <a href='/{{_unique_id}}/snippets.gtl?uid={{_key}}'>All Posts</a>&nbsp;
       <a href='{{web_site:text}}'>Homepage</a>
     <br>
     <br>

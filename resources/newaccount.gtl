@@ -2,13 +2,19 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<title>Profile</title>
 [[include:base.css]][[/include:base.css]]
 </head>
 
 <body>
 [[include:menubar.gtl]][[/include:menubar.gtl]]
-<h2>Gruyere: Sign up</h2>
+<h2>Sign up</h2>
 
 <div class='content'>
 <h3>Sign up for a new account.</h3>
@@ -29,9 +35,7 @@
     Password:
   </td><td>
     <input type='password' name='pw'>
-    <br><span style="color:red"><b>WARNING: Gruyere is not secure.<br>
-    Do not use a password that you use for any real service.<br>
-    Do not upload any personal or private data.</b></span>
+    <br>
 </td></tr>
 [[if:_cookie.is_admin]]
 <tr><td>

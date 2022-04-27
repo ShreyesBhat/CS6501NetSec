@@ -2,14 +2,20 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: Upload Complete</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<title>Upload Complete</title>
 [[include:base.css]][[/include:base.css]]
 </head>
 
 <body>
 [[include:menubar.gtl]][[/include:menubar.gtl]]
 <div>
-<h2>Gruyere: Upload Complete</h2>
+<h2>Upload Complete</h2>
 </div>
 
 [[if:_message]]

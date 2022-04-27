@@ -2,14 +2,20 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<title>Profile</title>
 [[include:base.css]][[/include:base.css]]
 </head>
 
 <body>
 [[include:menubar.gtl]][[/include:menubar.gtl]]
 <div>
-<h2>Gruyere: Profile</h2>
+<h2>Profile</h2>
 <h3>Add a new account or edit an existing account.</h3>
 </div>
 
@@ -40,12 +46,6 @@
     Homepage:
   </td><td>
     <input type='text' name='web_site' value='{{_profile.web_site:text}}'>
-</td></tr>
-<tr><td>
-    Private Snippet:
-  </td><td>
-    <input type='text' name='private_snippet'
-        value='{{_profile.private_snippet:text}}'>
 </td></tr>
 <tr><td></td><td align='right'>
     <input type='submit' value='Login'>

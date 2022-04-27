@@ -2,16 +2,22 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: New Snippet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<title>New Post</title>
 [[include:base.css]][[/include:base.css]]
 </head>
 
 <body>
 [[include:menubar.gtl]][[/include:menubar.gtl]]
-<h2>Gruyere: New Snippet</h2>
+<h2>New Post</h2>
 
 <div class='content'>
-<h3>Add a new snippet.</h3>
+<h3>Write your blog here.</h3>
 
 [[if:_message]]
 <div class='message'>{{_message}}</div>
@@ -23,10 +29,6 @@
 <br>
 <table summary='' style='width:100%'>
 <tr>
-<td align='left' valign='top'>
-  <i>Limited HTML is now supported in snippets (e.g., &lt;b&gt;, &lt;i&gt;,
-  etc.)!</i>
-</td>
 <td align='right' valign='top'>
   <input type='submit' value='Submit'>
 </td>

@@ -2,7 +2,13 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: Snippets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<title>Posts</title>
 [[include:base.css]][[/include:base.css]]
 <script src="/{{_unique_id}}/lib.js" text="text/javascript">
 </script>
@@ -22,7 +28,7 @@
   [[if:_db.*uid.icon]]<img alt='' height='32' width='32' src='{{_db.*uid.icon:text}}'>[[/if:_db.*uid.icon]]
 [[/if:uid]]
 [[if:!uid]]
-  My Snippets
+  My Posts
   [[if:_profile.icon]]<img alt='' height='32' width='32' src='{{_profile.icon:text}}'>[[/if:_profile.icon]]
 [[/if:!uid]]
 </h2>
@@ -38,11 +44,11 @@
   [[/if:!_db.*uid.is_author]]
   [[if:_db.*uid.is_author]]
     [[if:!_db.*uid.snippets.0]]
-      No snippets.
+      No Posts.
     [[/if:!_db.*uid.snippets.0]]
     [[if:_db.*uid.snippets.0]]
       <table>
-        <tr><td colspan='2'><b>All snippets:</b></td></tr>
+        <tr><td colspan='2'><b>All Posts:</b></td></tr>
         [[for:_db.*uid.snippets]]
           <tr>
             <td valign='top'>
@@ -61,26 +67,26 @@
     [[/if:_db.*uid.snippets.0]]
   [[/if:_db.*uid.is_author]]
 [[/if:uid]]
-{{# Your snippets }}
+{{# Your Posts }}
 [[if:!uid]]
   [[if:!_profile.is_author]]
     You are not an author.
   [[/if:!_profile.is_author]]
   [[if:_profile.is_author]]
     [[if:!_profile.snippets.0]]
-      No snippets.
+      No Posts.
     [[/if:!_profile.snippets.0]]
     [[if:_profile.snippets.0]]
       <br>
       <table>
-        <tr><td colspan='2'><b>All snippets:</b></td></tr>
+        <tr><td colspan='2'><b>All Posts:</b></td></tr>
         [[for:_profile.snippets]]
           <tr>
             <td valign='top'>
               <script>document.write({{_key}} + 1)</script>&nbsp;&nbsp;
             </td>
             <td valign='top'>
-              <a href='/{{_unique_id}}/deletesnippet?index={{_key}}'>[X]</a>&nbsp;
+              <button onclick="location.href='/{{_unique_id}}/deletesnippet?index={{_key}}'">Delete</button>&nbsp;
             </td>
             <td valign='top'>
               <div id='{{_key}}'>
@@ -93,7 +99,6 @@
     [[/if:_profile.snippets.0]]
   [[/if:_profile.is_author]]
   <br>
-  <a href='{{_profile.web_site:text}}'>My site</a>
 [[/if:!uid]]
 </div>
 </body>

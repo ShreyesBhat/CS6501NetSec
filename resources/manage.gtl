@@ -2,13 +2,19 @@
 <!-- Copyright 2017 Google Inc. -->
 <html>
 <head>
-<title>Gruyere: Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+<title>Profile</title>
 [[include:base.css]][[/include:base.css]]
 </head>
 
 <body>
 [[include:menubar.gtl]][[/include:menubar.gtl]]
-<h2>Gruyere: Manage the server</h2>
+<h2>Manage this server</h2>
 
 <div class='content'>
 <form method='get' action='/{{_unique_id}}/editprofile.gtl'>
