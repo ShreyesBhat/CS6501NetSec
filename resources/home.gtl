@@ -22,7 +22,7 @@
 </div>
 <div class='content'>
 <table width='100%'>
-<tr><td colspan='3'><b>All posts:</b></td></tr>
+<tr><td colspan='3' style='color:purple'><b>All posts:</b></td></tr>
 [[for:_db]]
 [[if:is_author]][[if:snippets.0]]
   <tr>
@@ -30,7 +30,7 @@
      [[if:icon]]<img alt='' height='32' width='32' src='{{icon:text}}'>[[/if:icon]]
     </td>
     <td>
-      <b><span style='color:{{color:text}}'>[[if:name]]{{name:text}}[[/if:name]][[if:!name]]{{_key}}[[/if:!name]]</span></b>
+      <b><span style='color:green'>[[if:name]]{{name:text}}[[/if:name]][[if:!name]]{{_key}}[[/if:!name]]</span></b>
     </td>
     <td width='100%'><span id='{{_key}}'>{{snippets.0:html}}</span>
     <br>
