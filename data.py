@@ -30,18 +30,15 @@ DEFAULT_DATA = {
         'private_snippet': 'My password is secret. Get it?',
         'web_site': 'https://www.google.com/contact/',
     },
-    'cheddar': {
-        'name': 'Cheddar Mac',
+    'joe': {
+        'name': 'Joey',
         'pw': 'orange',
         'is_author': True,
         'is_admin': False,
-        'private_snippet': 'My SSN is <a href="https://www.google.com/' +
-                           'search?q=078-05-1120">078-05-1120</a>.',
         'web_site': 'https://images.google.com/?q=cheddar+cheese',
         'color': 'blue',
         'snippets': [
-            'Gruyere is the cheesiest application on the web.',
-            'I wonder if there are any security holes in this....'
+            'Cooked lasagna from scratch today. It was wonderful!',
         ],
     },
     'sardo': {
@@ -54,16 +51,15 @@ DEFAULT_DATA = {
         'color': 'red',
         'snippets': [],
     },
-    'brie': {
-        'name': 'Brie',
+    'jen': {
+        'name': 'Jennifer',
         'pw': 'briebrie',
         'is_author': True,
         'is_admin': False,
-        'private_snippet': 'I use the same password for all my accounts.',
         'web_site': 'https://news.google.com/news/search?q=brie',
         'color': 'red; text-decoration:underline',
         'snippets': [
-            'Brie is the queen of the cheeses<span style=color:red>!!!</span>'
+            'I\'m new to blogging'
         ],
     },
 }

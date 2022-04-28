@@ -141,7 +141,6 @@ def main():
                            GruyereRequestHandler)
 
   print >>sys.stderr, '''
-      Gruyere started...
           http://%s:%d/
           http://%s:%d/%s/''' % (
               server_name, server_port, server_name, server_port,
@@ -267,7 +266,7 @@ class GruyereRequestHandler(BaseHTTPRequestHandler):
       if uid in database:
         if database[uid]['pw'] == self._GetParameter(params, 'pw'):
           (cookie, new_cookie_text) = (
-              self._CreateCookie('GRUYERE', uid))
+              self._CreateCookie('oreo', uid))
           self._DoHome(cookie, specials, params, new_cookie_text)
           return
       message = 'Invalid user name or password.'
@@ -284,7 +283,7 @@ class GruyereRequestHandler(BaseHTTPRequestHandler):
       params: Cgi parameters.
     """
     (cookie, new_cookie_text) = (
-        self._CreateCookie('GRUYERE', None))
+        self._CreateCookie('oreo', None))
     self._DoHome(cookie, specials, params, new_cookie_text)
 
   def _Do(self, cookie, specials, params):
@@ -648,6 +647,7 @@ class GruyereRequestHandler(BaseHTTPRequestHandler):
       }
     except (IndexError, ValueError):
       return self.NULL_COOKIE
+
 
   def _DoReset(self, cookie, specials, params):  # debug only; resets this db
     """Handles the /reset url for administrators to reset the database.

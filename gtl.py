@@ -27,7 +27,7 @@ import pprint
 import sys
 
 # our modules
-import gruyere
+import server
 import sanitize
 
 
@@ -167,7 +167,7 @@ def _ExpandInclude(_, filename, template, specials, params, name):
   f = None
   try:
     try:
-      f = gruyere._Open(gruyere.RESOURCE_PATH, fname)
+      f = server._Open(server.RESOURCE_PATH, fname)
       result = f.read()
     except IOError:
       _Log('Error: missing filename: %s' % (filename,))
